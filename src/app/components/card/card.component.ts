@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { CardDetailsComponent } from '../card-details/card-details.component';
+import { TASKS } from 'src/app/mock-tasks';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
 export class Card implements OnInit {
+  tasks = TASKS;
 
   constructor() { }
 

@@ -1,18 +1,9 @@
 <!-- add ngIf after creating function binding -->
 <div class="mt-4 mb-10 overflow-y-auto w-96 h-40">
-  <main>
-    <h1 class="font-bold">Welcome to SDVI</h1>
+  <main class="tasks">
+    <h1 class="font-bold">{{tasks[0].title}}</h1>
     <article class="mt-4">
-      <h2 class="font-semibold">Congratulations</h2>
-      <p class="mt-2"> Lorem ipsum dolor sit amet, consectetuer adipiscing
-        elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-        nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-        aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-        in hendrerit in vulputate velit esse molestie consequat, vel
-        illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-        et iusto odio dignissim qui blandit praesent luptatum zzril
-        delenit augue duis dolore te feugait nulla facilisi.
+      <p class="mt-2"> {{tasks[0].main}}
       </p>
     </article>
 
@@ -37,5 +28,5 @@
 </div>
 <h3 class="text-xs uppercase">Current Task:</h3>
 <h2 class="tracking-wide">
-  Welcome
+  {{tasks[0].currentTask}}
 </h2>
