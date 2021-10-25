@@ -9,7 +9,7 @@
     <app-card-details></app-card-details>
     <button (click)="onNext()" class="bg-blue-400 py-3 px-8 mt-4 rounded text-sm text-white font-semibold hover:bg-opacity-75">Next
         Task</button>
-    <button (click)="onBack()"
+    <button *ngIf="curr_index !== 0" (click)="onBack()"
       class="bg-blue-400 py-3 px-8 mt-4 ml-10 rounded text-sm text-white font-semibold hover:bg-opacity-75">Prev Task
       </button>
 </div>
