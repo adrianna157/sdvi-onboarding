@@ -1,13 +1,13 @@
 <!-- add ngIf after creating function binding -->
 <div class="mt-4 mb-10 overflow-y-auto w-96 h-40">
-  <main class="tasks">
-    <h1 class="font-bold">{{tasks[0].title}}</h1>
+  <main class="tasks curr_index">
+    <h1 class="font-bold ">{{tasks[curr_index].title}}</h1>
     <article class="mt-4">
-      <p class="mt-2"> {{tasks[0].main}}
+      <p class="mt-2"> {{tasks[curr_index].main}}
       </p>
     </article>
 
-    <article>
+    <!-- <article>
       <h2 class="mt-2 font-semibold">Next Steps</h2>
       <p class="mt-2">
         Lorem ipsum dolor sit amet, consectetuer adipiscing
@@ -22,11 +22,11 @@
       </p>
       <p>... </p>
       <p>... </p>
-    </article>
+    </article> -->
 
   </main>
 </div>
 <h3 class="text-xs uppercase">Current Task:</h3>
 <h2 class="tracking-wide">
-  {{tasks[0].currentTask}}
+  {{tasks[curr_index].currentTask}}
 </h2>

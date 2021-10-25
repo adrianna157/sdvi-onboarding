@@ -1,13 +1,16 @@
-<div class="bg-white p-10 my-52 rounded-lg shadow-2xl tasks">
+<div class="bg-white p-10 my-52 rounded-lg shadow-2xl tasks curr_index">
     <h1 class="text-xl font-bold">Onbarding Tasks</h1>
     <div class="mt-4 mb-10">
-        <p class="text-gray-600">Tasks are {{tasks[0].status}} completed</p>
+        <p class="text-gray-600">Tasks are {{tasks[curr_index].status}} completed</p>
         <div class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden">
-            <div class="bg-blue-400 {{tasks[0].statusBar}} h-full rounded-lg shadow-md"></div>
+            <div class="bg-blue-400 {{tasks[curr_index].statusBar}} h-full rounded-lg shadow-md"></div>
         </div>
     </div>
     <app-card-details></app-card-details>
-    <button class="bg-blue-400 py-3 px-8 mt-4 rounded text-sm text-white font-semibold hover:bg-opacity-75">Nex
+    <button (click)="onNext()" class="bg-blue-400 py-3 px-8 mt-4 rounded text-sm text-white font-semibold hover:bg-opacity-75">Next
         Task</button>
+    <button (click)="onBack()"
+      class="bg-blue-400 py-3 px-8 mt-4 ml-10 rounded text-sm text-white font-semibold hover:bg-opacity-75">Prev Task
+      </button>
 </div>
 
